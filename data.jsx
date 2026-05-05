@@ -100,6 +100,20 @@ const TEAM_A = [
     stats: { PAC: 80, SHO: 60, PAS: 76, DRI: 74, DEF: 78, PHY: 72 },
     quote: "Defends with negative space.",
   },
+  {
+    id: "abdallah_jalok",
+    name: "Abdallah Jalok",
+    short: "A. Jalok",
+    initials: "AJ",
+    bg: "Technology and Consulting Services",
+    pos: "CM",
+    role: "Associate Business Consultant",
+    tier: "rare",
+    rating: 87,
+    traits: ["Synergy Tackle", "PowerPoint Pass", "Out of Office"],
+    stats: { PAC: 76, SHO: 84, PAS: 94, DRI: 88, DEF: 82, PHY: 86 },
+    quote: "Let me circle back on that goal.",
+  },
 ];
 
 const TEAM_B = [
