@@ -231,19 +231,19 @@ function MatchStrip({ tweaks, lineupA, lineupB }) {
       <div className="match-banner__right">
         <div className="match-banner__teams">
           <div className="mb-team mb-team--A">
-            <div className="mb-team__crest">A</div>
+            <div className="mb-team__crest">ص</div>
             <div className="mb-team__meta">
-              <div className="mb-team__name">TEAM A</div>
+              <div className="mb-team__name">الصقور</div>
               <div className="mb-team__avg">AVG {avgA}</div>
             </div>
           </div>
           <div className="match-banner__vs">VS</div>
           <div className="mb-team mb-team--B">
             <div className="mb-team__meta mb-team__meta--right">
-              <div className="mb-team__name">TEAM B</div>
+              <div className="mb-team__name">العصافير</div>
               <div className="mb-team__avg">AVG {avgB}</div>
             </div>
-            <div className="mb-team__crest">B</div>
+            <div className="mb-team__crest">ع</div>
           </div>
         </div>
         <div className="match-banner__format">5-A-SIDE · 2 × 25 MIN</div>
@@ -421,8 +421,8 @@ function App() {
         <div className="stage">
           <TeamPanel
             side="A"
-            label="Team A"
-            crest="A"
+            label="الصقور"
+            crest="ص"
             roster={teamARoster}
             formation={tweaks.formationA}
             starters={lineupA.starters}
@@ -452,8 +452,8 @@ function App() {
             <PlayerDetail player={selectedPlayer} />
             <TeamPanel
               side="B"
-              label="Team B"
-              crest="B"
+              label="العصافير"
+              crest="ع"
               roster={teamBRoster}
               formation={tweaks.formationB}
               starters={lineupB.starters}
@@ -478,7 +478,7 @@ function App() {
           <TweakText label="Timezone" value={tweaks.matchTimezone} onChange={(v) => setTweak("matchTimezone", v)} />
         </TweakSection>
 
-        <TweakSection label="Team A · Formation">
+        <TweakSection label="الصقور · Formation">
           <TweakSelect
             label="Shape"
             value={tweaks.formationA}
@@ -491,10 +491,10 @@ function App() {
             options={window.TEAM_A.map((p) => ({ value: p.id, label: `${p.name} · ${p.rating}` }))}
             onChange={(v) => setTweak("captainA", v)}
           />
-          <TweakButton label="Auto-arrange Team A" onClick={() => clearLocks("A")} secondary />
+          <TweakButton label="Auto-arrange الصقور" onClick={() => clearLocks("A")} secondary />
         </TweakSection>
 
-        <TweakSection label="Team B · Formation">
+        <TweakSection label="العصافير · Formation">
           <TweakSelect
             label="Shape"
             value={tweaks.formationB}
@@ -507,7 +507,7 @@ function App() {
             options={window.TEAM_B.map((p) => ({ value: p.id, label: `${p.name} · ${p.rating}` }))}
             onChange={(v) => setTweak("captainB", v)}
           />
-          <TweakButton label="Auto-arrange Team B" onClick={() => clearLocks("B")} secondary />
+          <TweakButton label="Auto-arrange العصافير" onClick={() => clearLocks("B")} secondary />
         </TweakSection>
 
         {selectedPlayer && (
