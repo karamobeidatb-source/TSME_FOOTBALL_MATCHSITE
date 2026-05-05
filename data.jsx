@@ -102,9 +102,9 @@ const TEAM_A = [
   },
   {
     id: "abdallah_jalok",
-    name: "Abdallah Jalok",
-    short: "A. Jalok",
-    initials: "AJ",
+    name: "Jalok",
+    short: "Jalok",
+    initials: "JA",
     bg: "Technology and Consulting Services",
     pos: "CM",
     role: "Associate Business Consultant",
